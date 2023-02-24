@@ -1,0 +1,263 @@
+* {
+    box-sizing: border-box;
+}
+
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url(imágenes/fotoscv/fondo4.png);
+}
+
+body img {
+    background-repeat: repeat-x;
+    background-repeat: repeat-y;
+}
+
+#row {
+    background-color: #c19de2;
+    position: relative;
+    width: 100%;
+    margin: 0;
+    z-index: -1;
+}
+
+#logo {
+    position: absolute;
+    z-index: 2;
+    width: 5%;
+    top: 20%;
+    left: 48%;
+}
+
+#presentacion {
+    position: absolute;
+    z-index: 2;
+    width: 40%;
+    top: -2%;
+    left: 30.5%;
+}
+
+.slides {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;   
+}
+
+.slides ul {
+    display: flex;
+    padding: 0;
+    margin: 0;
+    width: 400%;
+    animation: cambiar 20s infinite alternate;
+}
+
+.slides li {
+    background-color: black;
+    width: 100%;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 0;
+}
+
+.slides img {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    opacity: 0.3;
+    z-index: 1;
+}
+
+@keyframes cambiar {
+    0% {margin-left: 0;}
+    20% {margin-left: 0;}
+
+    25% {margin-left: -100%;}
+    45% {margin-left: -100%;}
+
+    50% {margin-left: -200%;}
+    70% {margin-left: -200%;}
+
+    75% {margin-left: -300%;}
+    100% {margin-left: -300%;}
+}
+
+#menu {
+   /*position: fixed;
+    top: 0; 
+    intento de barra de navegacion */
+    background-color: #63259c;
+    padding: 1px;
+}
+
+#menu ul {
+    list-style-type: none;
+    text-align: center;
+    margin-right: 30px;
+  }
+  
+#menu li {
+    display: inline;
+    margin: 30px;
+    padding: 0;
+    font-size: 15px;
+    color: white;
+    font-family: 'Sofia Sans', sans-serif;
+    font-weight: bold 50%;
+  }
+
+/* Comienzo de CSS de H y P en CV */
+
+.primero p {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    border: 15px; 
+    padding-top: 35px;
+    padding-bottom: 35px;
+    padding-left: 350px;
+    padding-right: 350px;
+    margin: 20px;
+    font-size: 25px;
+    
+
+}
+
+.primero h1 {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    border: 0;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    padding-left: 330px;
+    padding-right: 350px;
+    margin: 0px;
+    font-size: 43.4px;
+    
+
+}
+
+.segundo p {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    border: 15px; 
+    padding-top: 35px;
+    padding-bottom: 35px;
+    padding-left: 350px;
+    padding-right: 350px;
+    margin: 20px;;
+    font-size: 25px;
+
+}
+
+.segundo h2 {
+
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    border: 0;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    padding-left: 330px;
+    padding-right: 330px;
+    margin: 0px;
+    font-size: 43.4px;
+}
+
+.tercero p {
+
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    border: 15px; 
+    padding-top: 35px;
+    padding-bottom: 35px;
+    padding-left: 350px;
+    padding-right: 350px;
+    margin: 20px;;
+    font-size: 25px;
+
+
+}
+
+.tercero h2 {
+
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    border: 0;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    padding-left: 330px;
+    padding-right: 330px;
+    margin: 0px;
+    font-size: 43.4px;
+}
+
+.cuarto p {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    border: 15px; 
+    padding-top: 35px;
+    padding-bottom: 35px;
+    padding-left: 350px;
+    padding-right: 350px;
+    margin: 20px;;
+    font-size: 25px;
+
+}
+
+.cuarto h2 {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    border: 0;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    padding-left: 330px;
+    padding-right: 350px;
+    margin: 0px;
+    font-size: 43.4px;
+
+}
+
+/* termina CSS para H y P de CV */
+
+
