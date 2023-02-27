@@ -18,7 +18,7 @@
 body {
     margin: 0;
     padding: 0;
-    background-image: url(imágenes/fotoscv/fondo4.png);
+    background-color:#380e5f;
 }
 
 body img {
@@ -38,7 +38,7 @@ body img {
     position: absolute;
     z-index: 2;
     width: 5%;
-    top: 20%;
+    top: 25%;
     left: 48%;
 }
 
@@ -46,7 +46,7 @@ body img {
     position: absolute;
     z-index: 2;
     width: 40%;
-    top: -2%;
+    top: 1%;
     left: 30.5%;
 }
 
@@ -54,7 +54,7 @@ body img {
     width: 100%;
     margin: 0;
     padding: 0;
-    overflow: hidden;   
+    overflow: hidden;
 }
 
 .slides ul {
@@ -96,10 +96,17 @@ body img {
     100% {margin-left: -300%;}
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
+section [id] {
+    scroll-margin-top: 100px;
+}
+
 #menu {
-   /*position: fixed;
-    top: 0; 
-    intento de barra de navegacion */
+    position: fixed;
+    top: 0;
     background-color: #63259c;
     padding: 1px;
 }
@@ -120,144 +127,124 @@ body img {
     font-weight: bold 50%;
   }
 
-/* Comienzo de CSS de H y P en CV */
+  .barra {
 
-.primero p {
+    color: white;
+    text-decoration: none;
 
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  }
 
-    border: 15px; 
-    padding-top: 35px;
-    padding-bottom: 35px;
-    padding-left: 350px;
-    padding-right: 350px;
-    margin: 20px;
-    font-size: 25px;
-    
-
+.sections {
+    background-color: white;
+    margin: 0% 18% 0% 18%;
+    padding: 20px 60px 70px 60px;
+    width: 65%;
+    border-radius: 50px 50px;
+    display: inline-block;
+    color:#380e5f;
 }
 
-.primero h1 {
-
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
-    border: 0;
-    padding-top: 0px;
-    padding-bottom: 0px;
-    padding-left: 330px;
-    padding-right: 350px;
-    margin: 0px;
-    font-size: 43.4px;
-    
-
+.subsections {
+    background-color: #e0cbf3;
+    border-radius: 20px 20px;
+    padding: 20px 35px 30px 35px;
 }
 
-.segundo p {
-
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-
-    border: 15px; 
-    padding-top: 35px;
-    padding-bottom: 35px;
-    padding-left: 350px;
-    padding-right: 350px;
-    margin: 20px;;
-    font-size: 25px;
-
+h1 {
+    text-align: center;
+    font-size: 40px;
+    font-family: 'Sofia Sans', sans-serif;
 }
 
-.segundo h2 {
-
-
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
-    border: 0;
-    padding-top: 0px;
-    padding-bottom: 0px;
-    padding-left: 330px;
-    padding-right: 330px;
-    margin: 0px;
-    font-size: 43.4px;
+h2 {
+    font-size: 20px;
+    font-family: 'Sofia Sans', sans-serif;
+    line-height: 20px;
 }
 
-.tercero p {
-
-
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-
-    border: 15px; 
-    padding-top: 35px;
-    padding-bottom: 35px;
-    padding-left: 350px;
-    padding-right: 350px;
-    margin: 20px;;
-    font-size: 25px;
-
-
+h3 {
+    font-size: 16px;
+    font-family: 'Sofia Sans', sans-serif;
+    line-height: 20px;
 }
 
-.tercero h2 {
-
-
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
-    border: 0;
-    padding-top: 0px;
-    padding-bottom: 0px;
-    padding-left: 330px;
-    padding-right: 330px;
-    margin: 0px;
-    font-size: 43.4px;
+p {
+    font-family: 'Sofia Sans', sans-serif;
+    font-size: 14px;
 }
 
-.cuarto p {
-
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-
-    border: 15px; 
-    padding-top: 35px;
-    padding-bottom: 35px;
-    padding-left: 350px;
-    padding-right: 350px;
-    margin: 20px;;
-    font-size: 25px;
-
+#datos_personales {
+    text-align: right;
+    line-height: 10px;
+    width: 32%;
+    float: left;
 }
 
-.cuarto h2 {
-
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
-    border: 0;
-    padding-top: 0px;
-    padding-bottom: 0px;
-    padding-left: 330px;
-    padding-right: 350px;
-    margin: 0px;
-    font-size: 43.4px;
-
+#info_sobremi {
+    text-align: justify;
+    width: 32%;
+    float: right;
+    line-height: 20px;
 }
 
-/* termina CSS para H y P de CV */
+#fotoperfil {
+    width: 35%;
+    margin-left: 0.5%;
+    padding: 0px;
+}
 
+#exp_laboral {
+    text-align: left;
+    line-height: 10px;
+    width: 49%;
+    float: left;
+}
 
+#educacion {
+    text-align: left;
+    line-height: 10px;
+    width: 49%;
+    float: right;
+}
+
+#idiomas {
+    text-align: center;
+    line-height: 10px;
+    width: 100%;
+    float: left;
+    margin-top: 20px;
+}
+
+#habilidades {
+    text-align: left;
+    line-height: 10px;
+    width: 40%;
+    float: left;
+}
+
+#portfolio {
+    width: 60%;
+    float: right;
+}
+
+#portfolio img {
+    width: 29%;
+    float: right;
+    margin: 7px 0px 7px 14px;
+}
+
+#portfolio h2 {
+    text-align: center;
+}
+
+#porcentajes {
+    text-align: right;
+    line-height: 24.5px;
+    width: 15%;
+    float: right;
+}
+
+#formulario {
+    text-align: center;
+    font-family: 'Sofia Sans', sans-serif;
+}
