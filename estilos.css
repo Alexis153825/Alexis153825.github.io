@@ -248,3 +248,14 @@ p {
     text-align: center;
     font-family: 'Sofia Sans', sans-serif;
 }
+
+footer {
+    background-color: #63259c;
+    color: white;
+    text-align: center;
+}
+
+footer img {
+    width: 2%;
+    margin: 10px;
+}
