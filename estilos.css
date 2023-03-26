@@ -1,0 +1,261 @@
+* {
+    box-sizing: border-box;
+}
+
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color:#380e5f;
+}
+
+body img {
+    background-repeat: repeat-x;
+    background-repeat: repeat-y;
+}
+
+#row {
+    background-color: #c19de2;
+    position: relative;
+    width: 100%;
+    margin: 0;
+    z-index: -1;
+}
+
+#logo {
+    position: absolute;
+    z-index: 2;
+    width: 5%;
+    top: 25%;
+    left: 48%;
+}
+
+#presentacion {
+    position: absolute;
+    z-index: 2;
+    width: 40%;
+    top: 1%;
+    left: 30.5%;
+}
+
+.slides {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.slides ul {
+    display: flex;
+    padding: 0;
+    margin: 0;
+    width: 400%;
+    animation: cambiar 20s infinite alternate;
+}
+
+.slides li {
+    background-color: black;
+    width: 100%;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 0;
+}
+
+.slides img {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    opacity: 0.3;
+    z-index: 1;
+}
+
+@keyframes cambiar {
+    0% {margin-left: 0;}
+    20% {margin-left: 0;}
+
+    25% {margin-left: -100%;}
+    45% {margin-left: -100%;}
+
+    50% {margin-left: -200%;}
+    70% {margin-left: -200%;}
+
+    75% {margin-left: -300%;}
+    100% {margin-left: -300%;}
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+section [id] {
+    scroll-margin-top: 100px;
+}
+
+#menu {
+    position: fixed;
+    top: 0;
+    background-color: #63259c;
+    padding: 1px;
+}
+
+#menu ul {
+    list-style-type: none;
+    text-align: center;
+    margin-right: 30px;
+  }
+  
+#menu li {
+    display: inline;
+    margin: 30px;
+    padding: 0;
+    font-size: 15px;
+    color: white;
+    font-family: 'Sofia Sans', sans-serif;
+    font-weight: bold 50%;
+  }
+
+  .barra {
+
+    color: white;
+    text-decoration: none;
+
+  }
+
+.sections {
+    background-color: white;
+    margin: 0% 18% 0% 18%;
+    padding: 20px 60px 70px 60px;
+    width: 65%;
+    border-radius: 50px 50px;
+    display: inline-block;
+    color:#380e5f;
+}
+
+.subsections {
+    background-color: #e0cbf3;
+    border-radius: 20px 20px;
+    padding: 20px 35px 30px 35px;
+}
+
+h1 {
+    text-align: center;
+    font-size: 40px;
+    font-family: 'Sofia Sans', sans-serif;
+}
+
+h2 {
+    font-size: 20px;
+    font-family: 'Sofia Sans', sans-serif;
+    line-height: 20px;
+}
+
+h3 {
+    font-size: 16px;
+    font-family: 'Sofia Sans', sans-serif;
+    line-height: 20px;
+}
+
+p {
+    font-family: 'Sofia Sans', sans-serif;
+    font-size: 14px;
+}
+
+#datos_personales {
+    text-align: right;
+    line-height: 10px;
+    width: 32%;
+    float: left;
+}
+
+#info_sobremi {
+    text-align: justify;
+    width: 32%;
+    float: right;
+    line-height: 20px;
+}
+
+#fotoperfil {
+    width: 35%;
+    margin-left: 0.5%;
+    padding: 0px;
+}
+
+#exp_laboral {
+    text-align: left;
+    line-height: 10px;
+    width: 49%;
+    float: left;
+}
+
+#educacion {
+    text-align: left;
+    line-height: 10px;
+    width: 49%;
+    float: right;
+}
+
+#idiomas {
+    text-align: center;
+    line-height: 10px;
+    width: 100%;
+    float: left;
+    margin-top: 20px;
+}
+
+#habilidades {
+    text-align: left;
+    line-height: 10px;
+    width: 40%;
+    float: left;
+}
+
+#portfolio {
+    width: 60%;
+    float: right;
+}
+
+#portfolio img {
+    width: 29%;
+    float: right;
+    margin: 7px 0px 7px 14px;
+}
+
+#portfolio h2 {
+    text-align: center;
+}
+
+#porcentajes {
+    text-align: right;
+    line-height: 24.5px;
+    width: 15%;
+    float: right;
+}
+
+#formulario {
+    text-align: center;
+    font-family: 'Sofia Sans', sans-serif;
+}
+
+footer {
+    background-color: #63259c;
+    color: white;
+    text-align: center;
+}
+
+footer img {
+    width: 2%;
+    margin: 10px;
+}
